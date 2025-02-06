@@ -1,0 +1,45 @@
+
+.about{
+    display: flex;
+    justify-content: start;
+}
+
+
+
+.aboutmenu{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 300px;
+    background-color:blanchedalmond;
+    height: 100vh;
+}
+.aboutmenu li{
+    list-style-type: none;
+}
+
+.aboutmenu li a{
+    padding: 14px 22px;
+    display: block;
+    text-decoration: none;
+    color: #e90c0c;
+    font-family: 'Geist Mono';
+}
+
+.aboutmenu .aboutPageHeading
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 22px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+
+
+
+.about .aboutbody{
+    width: calc(100% - 300px);
+    margin-left: auto;
+    padding: 15px 0 0 15px;
+}

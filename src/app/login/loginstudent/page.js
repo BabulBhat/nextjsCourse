@@ -4,7 +4,7 @@ import React from 'react'
 const Loginstudent = () => {
   return (
     <>
-        <div>Login For Student page</div>
+        <div className='heading'>Login For Student page</div>
         <Link href='/login'>Go To Login Page</Link>
     </>
   )
