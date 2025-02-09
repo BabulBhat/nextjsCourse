@@ -9,5 +9,5 @@ export function middleware(request) {
 
 // NOTE: particular kono page redirect korty hola ai vabay kortay hoby, path diya.
 export const config = {
-    matcher: ["/about/:path*", "/studentlist/:path*"]
+    matcher: ["/about/aboutteacher/:path*", "/studentlist/:path*"]
 }
