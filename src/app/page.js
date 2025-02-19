@@ -1,15 +1,14 @@
-import { Roboto } from "next/font/google";
-const roboto = Roboto({
-  weight : '100',
-  subsets : ['latin'],
-  display : 'swap'
-});
+import { BASE_URL } from "./config/constants";
+
 export default function Home() {
+  console.log(process.env.DBPASS);
+  
   return (
     <>
       <h1>Main Page</h1>
-      <h2 style={{fontFamily:"Roboto", fontWeight: 200}}>Font with Link tag in Next js</h2>
-      <h2 className={roboto.className}>Dynamic Font Usage</h2>
+      {
+        BASE_URL
+      }
     </>
   );
 }
