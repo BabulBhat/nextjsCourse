@@ -1,22 +1,9 @@
-async function userList() {
-    let data = await fetch(`https://dummyjson.com/users`);
-    data = await data.json();
-    return data.users;
-}
-export default async function Page(){
-    let users = await userList();    
-    console.log(users);
-    
+// import {redirect} from 'next/navigation'
+export default function Page() {
+    // redirect("/")
     return(
-        <>
-            <h1>User Name List</h1>
-            {
-                users.map((item)=>{
-                   return(
-                    <h3>Username : {item.firstName}</h3>
-                   )
-                })
-            }
-        </>
+        <div>
+            <h2>User Page</h2>
+        </div>
     )
 }
