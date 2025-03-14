@@ -1,12 +1,8 @@
-import { BASE_URL } from "./config/constants";
-
-export default function Home() {
-  console.log(process.env.DBPASS);
-
+import Link from 'next/link'
+export default async function Home() {
   return (
     <>
-      <h1>Main Page</h1>
-      {BASE_URL}
+      <Link href={`/users`}>User Page</Link>
     </>
   );
 }
