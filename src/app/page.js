@@ -1,8 +1,7 @@
-import Link from 'next/link'
-export default async function Home() {
+import MyApp from './pages/app';
+
+export default function Home() {
   return (
-    <>
-      <Link href={`/products`}>Product</Link>
-    </>
+    <MyApp />
   );
 }
